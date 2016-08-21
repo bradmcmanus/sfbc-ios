@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         centerMapOnLocation(location: initialLocation)
+        loadSupervisorInfo()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,9 +21,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    private func loadSupervisorInfo() {
+        guard let url = Bundle.main.url(forResource: "supervisor_districts", withExtension: "json", subdirectory: "") else {
+            return
+        }
+
+
+        do {
+            let data = try Data(contentsOf: url, options: .alwaysMapped)
+            let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
+            print(json)
+
+        } catch {
+            print("Something went wrong!")
+        }
+
+    }
+
     private func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius * 2.0, regionRadius * 2.0)
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
     }
 
