@@ -6,6 +6,7 @@ target 'SFBC' do
   use_frameworks!
 
   # Pods for SFBC
+  #pod 'Gloss', :git => 'https://github.com/hkellaway/Gloss', :branch => 'swift_3.0'
   #pod 'AFNetworking', '~> 3.0'
   #pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :branch => 'swift3'
   #pod 'GEOSwift', '~> 0.3.2'

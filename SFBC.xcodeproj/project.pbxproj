@@ -12,6 +12,7 @@
 		A218A79F1D69A6EF00F0FCC2 /* supervisor_districts.json in Resources */ = {isa = PBXBuildFile; fileRef = A218A79B1D69A6EF00F0FCC2 /* supervisor_districts.json */; };
 		A218A7A01D69A6EF00F0FCC2 /* sfpd_shapes.json in Resources */ = {isa = PBXBuildFile; fileRef = A218A79C1D69A6EF00F0FCC2 /* sfpd_shapes.json */; };
 		A218A7A11D69A6EF00F0FCC2 /* supervisor_shapes.geojson in Resources */ = {isa = PBXBuildFile; fileRef = A218A79D1D69A6EF00F0FCC2 /* supervisor_shapes.geojson */; };
+		A218A7A31D6A1A1500F0FCC2 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = A218A7A21D6A1A1500F0FCC2 /* District.swift */; };
 		A220CEFF1D69839F00B43154 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A220CEFE1D69839F00B43154 /* Podfile */; };
 		A2FBC5391D5FA914001DFDC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBC5381D5FA914001DFDC8 /* AppDelegate.swift */; };
 		A2FBC53B1D5FA914001DFDC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBC53A1D5FA914001DFDC8 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		A218A79B1D69A6EF00F0FCC2 /* supervisor_districts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = supervisor_districts.json; path = Data/supervisor_districts.json; sourceTree = "<group>"; };
 		A218A79C1D69A6EF00F0FCC2 /* sfpd_shapes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sfpd_shapes.json; path = Data/sfpd_shapes.json; sourceTree = "<group>"; };
 		A218A79D1D69A6EF00F0FCC2 /* supervisor_shapes.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = supervisor_shapes.geojson; path = Data/supervisor_shapes.geojson; sourceTree = "<group>"; };
+		A218A7A21D6A1A1500F0FCC2 /* District.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = District.swift; path = Data/District.swift; sourceTree = "<group>"; };
 		A220CEFE1D69839F00B43154 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		A2FBC5351D5FA914001DFDC8 /* SFBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FBC5381D5FA914001DFDC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				A218A79B1D69A6EF00F0FCC2 /* supervisor_districts.json */,
 				A218A79C1D69A6EF00F0FCC2 /* sfpd_shapes.json */,
 				A218A79D1D69A6EF00F0FCC2 /* supervisor_shapes.geojson */,
+				A218A7A21D6A1A1500F0FCC2 /* District.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2FBC53B1D5FA914001DFDC8 /* ViewController.swift in Sources */,
+				A218A7A31D6A1A1500F0FCC2 /* District.swift in Sources */,
 				A2FBC5391D5FA914001DFDC8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,16 +26,17 @@ class ViewController: UIViewController {
             return
         }
 
-
         do {
             let data = try Data(contentsOf: url, options: .alwaysMapped)
-            let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
-            print(json)
-
+            let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! [[String: AnyObject]]
+            var districts = [District]()
+            for obj in json {
+                districts.append(District(map: obj))
+            }
+            print(districts)
         } catch {
             print("Something went wrong!")
         }
-
     }
 
     private func centerMapOnLocation(location: CLLocation) {
